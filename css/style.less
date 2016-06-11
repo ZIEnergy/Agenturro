@@ -1,0 +1,344 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, input, button, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, div:after, div:before {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+        display: block;
+}
+body {
+        line-height: 1;
+}
+ol, ul {
+        list-style: none;
+}
+blockquote, q {
+        quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+        content: '';
+        content: none;
+}
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'HVDFontsBrandonTextLight';
+    src: url('../fonts/HVDFontsBrandonTextLight.eot');
+    src: url('../fonts/HVDFontsBrandonTextLight.eot') format('embedded-opentype'),
+         url('../fonts/HVDFontsBrandonTextLight.woff2') format('woff2'),
+         url('../fonts/HVDFontsBrandonTextLight.woff') format('woff'),
+         url('../fonts/HVDFontsBrandonTextLight.ttf') format('truetype'),
+         url('../fonts/HVDFontsBrandonTextLight.svg#HVDFontsBrandonTextLight') format('svg');
+}
+
+@font-face {
+    font-family: 'HVDFontsBrandonTextRegular';
+    src: url('../fonts/HVDFontsBrandonTextRegular.eot');
+    src: url('../fonts/HVDFontsBrandonTextRegular.eot') format('embedded-opentype'),
+         url('../fonts/HVDFontsBrandonTextRegular.woff2') format('woff2'),
+         url('../fonts/HVDFontsBrandonTextRegular.woff') format('woff'),
+         url('../fonts/HVDFontsBrandonTextRegular.ttf') format('truetype'),
+         url('../fonts/HVDFontsBrandonTextRegular.svg#HVDFontsBrandonTextRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'HVDFontsBrandonTextBold';
+    src: url('../fonts/HVDFontsBrandonTextBold.eot');
+    src: url('../fonts/HVDFontsBrandonTextBold.eot') format('embedded-opentype'),
+         url('../fonts/HVDFontsBrandonTextBold.woff2') format('woff2'),
+         url('../fonts/HVDFontsBrandonTextBold.woff') format('woff'),
+         url('../fonts/HVDFontsBrandonTextBold.ttf') format('truetype'),
+         url('../fonts/HVDFontsBrandonTextBold.svg#HVDFontsBrandonTextBold') format('svg');
+}
+
+.brandon-light {
+  font-family: 'HVDFontsBrandonTextLight';
+}
+
+.brandon-regular {
+  font-family: 'HVDFontsBrandonTextRegular';
+}
+
+.brandon-bold {
+  font-family: 'HVDFontsBrandonTextBold';
+}
+
+html {
+  font-size: 10px;
+}
+
+.front {
+  background: #259fbd url(../img/front-bg.jpg) no-repeat;
+  background-size: cover;
+  padding-bottom: 4.4rem;
+}
+
+.wrapper {
+  width: 140rem;
+  margin: 0 auto;
+}
+
+.header {
+  width: 115.7rem;
+  margin: 0 auto;
+  padding: 1.4rem 0 8.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background: url(../img/logo.svg) no-repeat;
+  background-size: cover;
+  display: block;
+  width: 15.5rem;
+  height: 2.6rem;
+}
+
+.phone__icon {
+  background: url(../img/icon-phone--white.svg) no-repeat;
+  background-size: cover;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 1.5rem;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.phone__number {
+  opacity: .85;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  .brandon-light;
+}
+
+.login-button {
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 1.4rem;
+  width: 11.2rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 2.9rem;
+}
+
+.login-button__text {
+  color: rgba(255, 255, 255, .8);
+  .brandon-regular;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+}
+
+.login-button__icon {
+  background: url(../img/icon-user.svg) no-repeat;
+  background-size: cover;
+  width: 1.2rem;
+  height: 1.1rem;
+  margin-right: 1.2rem;
+}
+
+.header__content {
+  display: flex;
+}
+
+.title__top {
+  color: #fff;
+  .brandon-light;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title__middle {
+  color: #fff;
+  .brandon-bold;
+  font-size: 9.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.title__bottom {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  .brandon-light;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.button {
+  height: 4.7rem;
+  padding: 0 5rem;
+  .brandon-regular;
+  font-size: 1.8rem;
+  line-height: 4.7rem;
+  color: #af5003;
+  background-color: #f3d400;
+  border-radius: 2.3rem;
+  box-shadow: 0 0 4rem rgba(4, 77, 95, 0.21);
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.button__bold {
+  .brandon-bold;
+}
+
+.front__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+
+.button--transparent {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 26rem;
+  text-align: center;
+  line-height: 4.5rem;
+  margin-left: 3.4rem;
+}
+
+.steps {
+  width: 931px;
+  margin: 12.2rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps__item-number {
+  border: 1px solid rgba(255, 255, 255, .7);
+  text-align: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  text-align: center;
+  line-height: 4.6rem;
+  margin-right: 2rem;
+  color: #fff;
+  .brandon-regular;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.steps__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:first-child {
+    &:after {
+      content: '';
+      display: block;
+      background: url(../img/steps-arrow.svg) no-repeat;
+      background-size: cover;
+      width: 16.7rem;
+      height: 2.7rem;
+      position: absolute;
+      left: 17rem;
+      top: -2rem;
+    }
+  }
+  &:last-child {
+    &:after {
+      content: '';
+      display: block;
+      background: url(../img/steps-arrow.svg) no-repeat;
+      background-size: cover;
+      width: 16.7rem;
+      height: 2.7rem;
+      position: absolute;
+      transform: scaleY(-1);
+      left: -18.7rem;
+      bottom: -3rem;
+    }
+  }
+}
+
+.steps__item-content {
+  color: #fff;
+  font-size: 1.6rem;
+  .brandon-light;
+  width: 19rem;
+}
+
+
+
+.front__button {
+  &:after {
+    content: '';
+    display: block;
+    width: 27.4rem;
+    height: 2.1rem;
+    top: 3.3rem;
+    left: 1rem;
+    position: absolute;
+    box-shadow: 1.75rem 3.03rem 2.4rem rgba(4, 77, 95, 0.20);
+  }
+}
+
+.front__button-2 {
+  &:after {
+    content: '';
+    display: block;
+    width: 23.8rem;
+    height: 2.1rem;
+    top: 3.3rem;
+    position: absolute;
+    left: -1.3rem;
+    box-shadow: 1.75rem 3.03rem 2.4rem rgba(4, 77, 95, 0.16);
+  }
+}
+
+.front__button-1 {
+  &:after {
+    content: '';
+    display: block;
+    width: 27.4rem;
+    height: 2.1rem;
+    left: 1rem;
+    top: 3.3rem;
+    position: absolute;
+    box-shadow: 1.75rem 3.03rem 2.4rem rgba(4, 77, 95, 0.16);
+  }
+}
