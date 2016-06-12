@@ -417,6 +417,7 @@ html {
   font-size: 2.5rem;
   line-height: 3.4rem;
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 .advantages__item-text {
   font-family: 'HVDFontsBrandonTextLight';
@@ -469,8 +470,13 @@ html {
 .projects .slick-arrow {
   position: absolute;
   cursor: pointer;
+  width: 5.9rem;
+  height: 9.3rem;
+  margin-top: -4.7rem;
+  background: url(../img/arrow-gray.svg) no-repeat;
+  top: 50%;
+  text-indent: 9999px;
   z-index: 40;
-  margin-top: 0;
 }
 .projects .slick-arrow:focus {
   outline: 0;
@@ -478,23 +484,9 @@ html {
 }
 .projects .slick-prev {
   left: -14.7rem;
-  top: 50%;
-  background: url(../img/arrow-gray.svg) no-repeat;
-  width: 5.9rem;
-  height: 9.3rem;
-  margin-top: -4.7rem;
-  text-indent: 9999px;
-  z-index: 40;
 }
 .projects .slick-next {
   right: -14.7rem;
-  top: 50%;
-  margin-top: -4.7rem;
-  background: url(../img/arrow-gray.svg) no-repeat;
-  width: 5.9rem;
-  height: 9.3rem;
-  text-indent: 9999px;
-  z-index: 40;
   transform: rotate(180deg);
 }
 .projects__item-info {
@@ -560,35 +552,7 @@ html {
   box-shadow: none;
 }
 .portfolio {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  width: 140rem;
-  margin: 0 auto;
-}
-.portfolio:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 18rem;
-  opacity: 0.8;
-  background-image: linear-gradient(to right, black 0%, transparent 100%);
-  z-index: 10;
-}
-.portfolio:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 18rem;
-  opacity: 0.8;
-  background-image: linear-gradient(to right, transparent 0%, black 100%);
-  z-index: 10;
+  background: #f7f7f7;
 }
 .portfolio .slick-arrow {
   position: absolute;
@@ -757,6 +721,7 @@ html {
   align-items: center;
   flex-direction: column;
   margin-top: 5rem;
+  position: relative;
 }
 .form-upload__dragndrop-icon {
   background: url(../img/upload-icon.svg) no-repeat;
@@ -898,4 +863,312 @@ html {
   padding-top: 5.3rem;
   overflow: hidden;
   margin: 0 auto;
+}
+#fileupload {
+  width: 62.3rem;
+  height: 14.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.portfolio__content {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 18rem;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, black 0%, transparent 100%);
+  z-index: 10;
+}
+.portfolio__content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 18rem;
+  opacity: 0.8;
+  background-image: linear-gradient(to right, transparent 0%, black 100%);
+  z-index: 10;
+}
+.portfolio__item {
+  width: 35.1rem;
+  height: 35.1rem;
+}
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .clients {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .upload__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .advantages__list {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .projects__content {
+    width: 100%;
+  }
+  .projects__content .slick-prev {
+    left: 1rem;
+  }
+  .projects__content .slick-next {
+    right: 1rem;
+  }
+  .header {
+    width: 100%;
+  }
+  .contacts {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .clients .clients__item:nth-child(n+5) {
+    display: none;
+  }
+  .steps {
+    width: 100%;
+  }
+  .steps .steps__item {
+    width: 30%;
+  }
+  .steps .steps__item br {
+    display: none;
+  }
+  .steps .steps__item:before {
+    display: none;
+  }
+  .steps .steps__item:after {
+    display: none;
+  }
+  .steps .steps__item-number {
+    flex: 0 0 auto;
+  }
+  .steps .steps__item-content {
+    width: auto;
+  }
+  .advantages {
+    padding-bottom: 5rem;
+  }
+  .projects__content {
+    height: auto;
+  }
+  .projects__content .slick-arrow {
+    width: 3rem;
+    height: 4.6rem;
+    margin-top: -2.3rem;
+    background-size: cover;
+  }
+  .projects__content .slick-prev {
+    left: -6rem;
+  }
+  .projects__content .slick-next {
+    right: -6rem;
+  }
+  .projects__slider {
+    box-shadow: none;
+    width: 80%;
+    height: auto;
+  }
+  .projects__item-picture {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio__item {
+    width: 20rem;
+    height: 20rem;
+  }
+  .contacts {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .map {
+    width: 100%;
+    height: 30rem;
+    margin-top: 3rem;
+  }
+  .advantages__item {
+    width: 30%;
+  }
+  .sticky-header {
+    justify-content: space-between;
+  }
+  .sticky-header__logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .form {
+    align-items: center;
+  }
+  .form__button {
+    margin-top: 0;
+  }
+  .contacts-content {
+    margin-top: 3rem;
+  }
+  .text-common {
+    width: 100%;
+  }
+  .sticky-header .phone {
+    display: none;
+  }
+  .button {
+    font-size: 1.4rem;
+  }
+  .form-upload__dragndrop {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .form-upload__link-input {
+    margin: 0 auto 3rem;
+    width: 100%;
+  }
+  .text-common {
+    width: 80%;
+  }
+  .offer {
+    padding-top: 3rem;
+  }
+  .offer__price {
+    margin: 3rem 0;
+  }
+  .projects {
+    margin: 0 0 3rem;
+    padding-top: 0;
+  }
+  .projects .slick-prev {
+    left: -4rem;
+  }
+  .projects .slick-next {
+    right: -4rem;
+  }
+}
+@media screen and (max-width: 567px) {
+  .logo {
+    width: 7.7rem;
+    height: 1.3rem;
+  }
+  .phone {
+    display: none;
+  }
+  .title__top {
+    font-size: 1.6rem;
+  }
+  .title__middle {
+    font-size: 4.8rem;
+  }
+  .front__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button--transparent {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .steps {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .steps .steps__item {
+    width: 100%;
+  }
+  .steps .steps__item + .steps__item {
+    margin-top: 2rem;
+  }
+  .clients .clients__item:nth-child(n+4) {
+    display: none;
+  }
+  .form-upload__dragndrop {
+    padding: 0 2rem;
+  }
+  .form-upload__dragndrop-text {
+    text-align: center;
+  }
+  .form-upload__link-input {
+    width: 90%;
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  .upload__button {
+    width: 90%;
+  }
+  .confidentiality {
+    width: 90%;
+  }
+  .confidentiality__icon {
+    flex: 0 0 auto;
+  }
+  .advantages__item {
+    width: 100%;
+  }
+  .advantages__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer__price-content {
+    font-size: 6rem;
+  }
+  .button--solo {
+    width: 90%;
+  }
+  .projects__slider {
+    width: 70%;
+  }
+  .projects {
+    margin: 0 0 3rem;
+    padding-top: 0;
+  }
+  .projects .slick-prev {
+    left: -4.5rem;
+  }
+  .projects .slick-next {
+    right: -4.5rem;
+  }
+  .projects__item-info {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+  }
+  .projects__item-time {
+    font-size: 1.4rem;
+  }
+  .projects__item-price {
+    font-size: 2rem;
+  }
+  .contacts-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .socials__item {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .socials__item + .socials__item {
+    margin-left: 2rem;
+  }
+  .projects__item {
+    position: relative;
+  }
+  .projects__item-time:after {
+    height: 3rem;
+  }
 }

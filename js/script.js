@@ -4,9 +4,8 @@ $(document).ready(function() {
       slidesToShow: 1,
     });
   
-    $('.portfolio').slick({
-      infinite: false,
-      slidesToShow: 4,
+    $('.portfolio__content').slick({
+      variableWidth: true
     });
   
     $(window).scroll(function() {
@@ -16,6 +15,17 @@ $(document).ready(function() {
       else if (($(window).scrollTop() <50)) {
         $('.sticky-header').fadeOut();
       }
+    });
+  
+    $(function () {
+        $('#fileupload').fileupload({
+            dataType: 'json',
+            done: function (e, data) {
+                $.each(data.result.files, function (index, file) {
+                    $('<p/>').text(file.name).appendTo(document.body);
+                });
+            }
+        });
     });
   
 });

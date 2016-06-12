@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
+  <script type="text/javascript" src="js/jquery.fileupload.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -106,6 +109,7 @@
         <div class="form-upload__dragndrop">
           <div class="form-upload__dragndrop-icon"></div>
           <div class="form-upload__dragndrop-text">Jetzt Wireframe (Skizze) hochladen</div>
+          <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
         </div>
         <div class="form-upload__link-text">Oder wenn Du es online hast, füge hier einfach den Link ein</div>
         <input type="text" placeholder="http://" name="link" class="form-upload__link-input">
@@ -174,30 +178,32 @@
     </div>
   </div>
   <div class="portfolio">
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
-    </a>
-    <a href="#" class="portfolio__item">
-      <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
-    </a>
+    <div class="portfolio__content">
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
+      </a>
+      <a href="#" class="portfolio__item">
+        <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
+      </a>
+    </div>
   </div>
   <div class="contacts">
     <form action="" class="form">
