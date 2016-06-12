@@ -269,6 +269,7 @@ html {
   display: block;
   text-decoration: none;
   position: relative;
+  cursor: pointer;
 }
 .button__bold {
   font-family: 'HVDFontsBrandonTextBold';
@@ -459,6 +460,7 @@ html {
   height: 64.1rem;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
   box-shadow: 0 5px 62px rgba(39, 89, 108, 0.22);
 }
 .projects .slick-arrow {
@@ -561,6 +563,7 @@ html {
 }
 .portfolio {
   position: relative;
+  overflow: hidden;
   width: 100%;
 }
 .portfolio:before {
@@ -721,4 +724,103 @@ html {
   font-size: 1.4rem;
   font-family: 'HVDFontsBrandonTextRegular';
   color: #737171;
+}
+.upload__text {
+  color: #434343;
+  font-family: 'HVDFontsBrandonTextLight';
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+  padding-top: 5.3rem;
+}
+.text-bold {
+  font-family: 'HVDFontsBrandonTextBold';
+}
+.upload {
+  background-color: #f7f7f7;
+  border-bottom: 3px dashed #d9d9d9;
+  padding-bottom: 3.3rem;
+}
+.form-upload__dragndrop {
+  background: #fff;
+  width: 62.3rem;
+  height: 14.6rem;
+  border: 3px dashed #dadada;
+  border-radius: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.form-upload__dragndrop-icon {
+  background: url(../img/upload-icon.svg) no-repeat;
+  background-size: cover;
+  width: 8.2rem;
+  height: 5.1rem;
+}
+.form-upload__dragndrop-text {
+  color: #434343;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+.form-upload__link-text {
+  color: #434343;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  text-align: center;
+  margin-top: 3.4rem;
+  margin-bottom: 1.4rem;
+}
+.form-upload__link-input {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 1.6rem;
+  width: 62.3rem;
+  height: 5.4rem;
+  padding-left: 2.3rem;
+  font-size: 1.8rem;
+  font-family: 'HVDFontsBrandonTextBold';
+  margin-bottom: 3.9rem;
+}
+.upload__button {
+  padding: 0;
+  width: 32rem;
+  margin: 0 auto;
+}
+.confidentiality__icon {
+  width: 1.4rem;
+  height: 1.8rem;
+  background: url(../img/icon-lock.png) no-repeat;
+  background-size: cover;
+  margin-right: 2.3rem;
+}
+.confidentiality {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.confidentiality__content {
+  color: #8f8f8f;
+  font-family: 'HVDFontsBrandonTextLight';
+  font-size: 1.7rem;
+}
+.upload__close {
+  position: absolute;
+  color: #d2d2d2;
+  font-family: 'HVDFontsBrandonTextLight';
+  font-size: 8.6rem;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+}
+.upload__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 111.9rem;
+  margin: 0 auto;
 }
