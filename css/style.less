@@ -448,14 +448,17 @@ html {
   height: 64.1rem;
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 0 5px 62px rgba(39, 89, 108, 0.22);
+  box-shadow: 0 .5rem 6.2rem rgba(39, 89, 108, 0.22);
 }
 
 .projects {
+  background-color: #f7f7f7;
+  padding: 5.8rem 0 5.1rem;
   .slick-arrow {
     position: absolute;
     cursor: pointer;
+    z-index: 40;
+    margin-top: 0;
     &:focus {
       outline: 0;
       box-shadow: none;
@@ -468,8 +471,8 @@ html {
     width: 5.9rem;
     height: 9.3rem;
     margin-top: -4.7rem;
-    z-index: 5;
     text-indent: 9999px;
+    z-index: 40;
   }
   .slick-next {
     right: -14.7rem;
@@ -478,20 +481,18 @@ html {
     background: url(../img/arrow-gray.svg) no-repeat;
     width: 5.9rem;
     height: 9.3rem;
-    z-index: 5;
     text-indent: 9999px;
+    z-index: 40;
     transform: rotate(180deg);
   }
 }
 
-.projects__item {
-  position: relative;
-}
+
 
 .projects__item-info {
   position: absolute;
   bottom: 5.4rem;
-  left: 0;
+  left: 14.7rem;
   background: rgba(0, 0, 0, .7);
   padding: 1.4rem 1.8rem;
   display: flex;
@@ -529,10 +530,7 @@ html {
   .brandon-bold;
 }
 
-.projects {
-  background-color: #f7f7f7;
-  padding: 11.1rem 0 13.2rem;
-}
+
 
 .slick-dots {
   position: absolute;
@@ -630,6 +628,11 @@ html {
   font-size: 1.7rem;
   color: #000;
   padding-left: 2rem;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
 }
 
 .form {
@@ -835,6 +838,7 @@ html {
   right: 0;
   top: 0;
   transform: rotate(45deg);
+  cursor: pointer;
 }
 
 .upload__container {
@@ -843,5 +847,93 @@ html {
   align-items: center;
   position: relative;
   width: 111.9rem;
+  margin: 0 auto;
+}
+
+.phone__icon--black {
+  background: url(../img/icon-phone-black.svg) no-repeat;
+  background-size: cover;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 1.2rem;
+}
+
+.button--order {
+  width: 16rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  padding: 0;
+  margin-left: 3.5rem;
+  color: #af5003;
+  .brandon-bold;
+}
+
+.sticky-header {
+  height: 6.6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 0 2.3rem;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: .15rem .26rem .5rem rgba(16, 16, 14, 0.35);
+  z-index: 50;
+}
+
+.sticky-header__logo {
+  background: url(../img/logo-black.png) no-repeat;
+  background-size: cover;
+  width: 15.5rem;
+  height: 2.9rem;
+  position: absolute;
+  top: 2.1rem;
+  left: 2.3rem;
+}
+
+.menu__item-link {
+  font-size: 1.8rem;
+  color: #000;
+  opacity: .75;
+  .brandon-light;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  margin-right: 4rem;
+}
+
+.menu__item {
+  +.menu__item {
+    margin-left: 3rem;
+  }
+}
+
+.phone__number--black {
+  opacity: .85;
+  color: #000;
+  .brandon-bold;
+  font-size: 2rem;
+}
+
+
+
+.projects__item {
+  
+}
+
+
+
+.projects__content {
+  width: 116.1rem;
+  height: 82.1rem;
+  padding-top: 5.3rem;
+  overflow: hidden;
   margin: 0 auto;
 }
