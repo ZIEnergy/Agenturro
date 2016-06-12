@@ -14,7 +14,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, section, textarea, summary,
 time, mark, audio, video, div:after, div:before {
         margin: 0;
         padding: 0;
@@ -214,7 +214,6 @@ html {
   color: #af5003;
   background-color: #f3d400;
   border-radius: 2.3rem;
-  box-shadow: 0 0 4rem rgba(4, 77, 95, 0.21);
   display: block;
   text-decoration: none;
   position: relative;
@@ -241,7 +240,7 @@ html {
 }
 
 .steps {
-  width: 931px;
+  width: 93.1rem;
   margin: 12.2rem auto 0;
   display: flex;
   justify-content: space-between;
@@ -258,7 +257,7 @@ html {
   margin-right: 2rem;
   color: #fff;
   .brandon-regular;
-  font-size: 18px;
+  font-size: 1.8rem;
   border-radius: 50%;
 }
 
@@ -348,31 +347,32 @@ html {
 .clients {
   display: flex;
   justify-content: space-between;
-  width: 1132px;
+  width: 113.2rem;
   margin: 0 auto;
   align-items: center;
-  height: 97px;
+  height: 9.7rem;
 }
 
 .advantages__header {
   color: #3a3a3a;
   .brandon-bold;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 4.5rem;
 }
 
 .advantages {
   background: #fff;
-  padding-top: 62px;
+  padding-top: 6.2rem;
+  padding-bottom: 14rem;
 }
 
 .text-common {
   color: #595959;
   .brandon-light;
-  font-size: 18px;
-  width: 730px;
+  font-size: 1.8rem;
+  width: 73rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -400,11 +400,332 @@ html {
 
 .advantages__item-text {
   .brandon-light;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #696969;
   text-align: center;
 }
 
 .advantages__item-picture {
   margin-bottom: 3.5rem;
+}
+
+.offer__header {
+  color: #3a3a3a;
+  .brandon-bold;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 4.5rem;
+}
+
+.offer {
+  background-color: #f7f7f7;
+  padding-top: 7.5rem;
+}
+
+.offer__price {
+  color: #3a3a3a;
+  font-size: 3.2rem;
+  .brandon-bold;
+  text-align: center;
+  margin: 5.5rem 0 4.3rem;
+}
+
+.offer__price-content {
+  font-size: 12.2rem;
+}
+
+.button--solo {
+  width: 39rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.projects__slider {
+  width: 86.7rem;
+  height: 64.1rem;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 5px 62px rgba(39, 89, 108, 0.22);
+}
+
+.projects {
+    .slick-arrow {
+    position: absolute;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .slick-prev {
+    left: -14.7rem;
+    top: 50%;
+    background: url(../img/arrow-gray.svg) no-repeat;
+    width: 5.9rem;
+    height: 9.3rem;
+    margin-top: -4.7rem;
+    z-index: 5;
+    text-indent: 9999px;
+  }
+  .slick-next {
+    right: -14.7rem;
+    top: 50%;
+    margin-top: -4.7rem;
+    background: url(../img/arrow-gray.svg) no-repeat;
+    width: 5.9rem;
+    height: 9.3rem;
+    z-index: 5;
+    text-indent: 9999px;
+    transform: rotate(180deg);
+  }
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__item-info {
+  position: absolute;
+  bottom: 5.4rem;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.projects__item-time {
+  font-size: 2.8rem;
+  .brandon-light;
+  color: rgba(255, 255, 255, .7);
+  display: flex;
+  align-items: center;
+  &:after {
+    content: '';
+    display: block;
+    margin: 0 2rem;
+    height: 4.6rem;
+    width: .2rem;
+    background: #fff;
+    opacity: .5;
+  }
+}
+
+.projects__item-price {
+  font-size: 3.8rem;
+  color: #fff;
+  .brandon-bold;
+  display: flex;
+  align-items: flex-start;
+}
+
+.projects__item-price-cents {
+  color: #fff;
+  font-size: 1.7rem;
+  .brandon-bold;
+}
+
+.projects {
+  background-color: #f7f7f7;
+  padding: 11.1rem 0 13.2rem;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -7.9rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  li.slick-active button {
+    background-color: #f3d400;
+  }
+  li+li {
+    margin-left: 2rem;
+  }
+  button {
+    width: 1.4rem;
+    height: 1.4rem;
+    background: #fff;
+    border-radius: 50%;
+    text-indent: 9999px;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+.portfolio {
+  position: relative;
+  width: 100%;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 18rem;
+    opacity: 0.8;
+    background-image: linear-gradient(to right, black 0%, transparent 100%);
+    z-index: 10;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 18rem;
+    opacity: 0.8;
+    background-image: linear-gradient(to right, transparent 0%, black 100%);
+    z-index: 10;
+  }
+  .slick-arrow {
+    position: absolute;
+    text-indent: 9999px;
+    top: 50%;
+    width: 3.9rem;
+    height: 6.3rem;
+    margin-top: -2rem;
+    background: url(../img/arrow-white.svg) no-repeat;
+    cursor: pointer;
+    z-index: 20;
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .slick-prev {
+    left: 1.3rem;
+  }
+  .slick-next {
+    right: 1.3rem;
+    transform: rotate(180deg);
+  }
+}
+.contacts {
+  background-color: #f7f7f7;
+  padding: 7rem 0 6rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.input-text {
+  width: 100%;
+  height: 5.4rem;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 1.6rem;
+  margin-bottom: 1.8rem;
+  .brandon-regular;
+  font-size: 1.7rem;
+  color: #000;
+  padding-left: 2rem;
+}
+
+.form {
+  width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-text--textarea {
+  height: 11.3rem;
+  padding-top: 1.5rem;
+  resize: none;
+}
+
+.input-text::-webkit-input-placeholder {color:#8d8d8d;;}
+.input-text::-moz-placeholder          {color:#8d8d8d;}/* Firefox 19+ */
+.input-text:-moz-placeholder           {color:#8d8d8d;}/* Firefox 18- */
+.input-text:-ms-input-placeholder      {color:#8d8d8d;}
+
+.form__button {
+  margin-top: 2.3rem;
+}
+
+.contacts-content {
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 9.7rem 0 12.5rem;
+}
+
+.contacts-content__text {
+  color: #222;
+  .brandon-regular;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.logo-blue {
+  margin-bottom: 2.8rem;
+}
+
+.map {
+  width: 36rem;
+  height: 27rem;
+  border-radius: 1.6rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 13.5rem;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__item {
+  width: 4.9rem;
+  height: 4.9rem;
+  +.socials__item {
+    margin-left: 4.5rem;
+  }
+}
+
+.socials__item--fb {
+  background: url(../img/icon-fb.png) no-repeat;
+  background-size: cover;
+}
+
+.socials__item--google {
+  background: url(../img/icon-google.png) no-repeat;
+  background-size: cover;
+}
+
+.socials__item--instagram {
+  background: url(../img/icon-instagram.png) no-repeat;
+  background-size: cover;
+}
+
+.socials__item--pinterest {
+  background: url(../img/icon-pinterest.png) no-repeat;
+  background-size: cover;
+}
+
+.socials__item--whatsapp {
+  background: url(../img/icon-whatsapp.png) no-repeat;
+  background-size: cover;
+}
+.copyright {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  .brandon-regular;
+  color: #737171;
 }
