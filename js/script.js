@@ -5,7 +5,16 @@ $(document).ready(function() {
   });
 
   $('.portfolio__content').slick({
-    variableWidth: true
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 567,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 3
+        }
+      }
+    ]
   });
 
   $(window).scroll(function() {

@@ -989,14 +989,6 @@ html {
   font-size: 2rem;
 }
 
-
-
-.projects__item {
-  
-}
-
-
-
 .projects__content {
   width: 116.1rem;
   height: 82.1rem;
@@ -1057,7 +1049,7 @@ html {
   width: 3.9rem;
   height: 6.3rem;
   background: url(../img/arrow-white.svg) no-repeat;
-  left: -15rem;
+  left: -65rem;
 }
 
 .fancybox-next span {
@@ -1066,7 +1058,65 @@ html {
   height: 6.3rem;
   background: url(../img/arrow-white.svg) no-repeat;
   transform: rotate(180deg);
-  right: -15rem;
+  right: -65rem;
+}
+
+.fancybox-close {
+  background: url(../img/close.svg) no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  right: -65rem;
+  top: -10rem;
+}
+
+@media screen and (max-width: 1700px) {
+  .fancybox-prev span {
+    left: -50rem;
+  }
+  .fancybox-next span {
+    right: -50rem;
+  }
+  .fancybox-close {
+    right: -45rem;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .fancybox-prev span {
+    left: -40rem;
+  }
+  .fancybox-next span {
+    right: -40rem;
+  }
+  .fancybox-close {
+    right: -35rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fancybox-prev span {
+    left: -30rem;
+  }
+  .fancybox-next span {
+    right: -30rem;
+  }
+  .fancybox-close {
+    right: -30rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .fancybox-prev span {
+    left: -20rem;
+  }
+  .fancybox-next span {
+    right: -20rem;
+  }
+  .fancybox-close {
+    right: -15rem;
+    top: -5rem;
+  }
 }
 
 .fancybox-title iframe {
@@ -1083,13 +1133,8 @@ html {
   font-size: 1.6rem;
 }
 
-.fancybox-close {
-  background: url(../img/close.svg) no-repeat;
-  background-size: cover;
-  width: 1.6rem;
-  height: 1.6rem;
-  right: -20rem;
-  top: -5rem;
+.logo-blue--mobile {
+  display: none;
 }
 
 @media screen and (max-width: 1399px) {
@@ -1210,10 +1255,6 @@ html {
   .sticky-header__logo {
     display: none;
   }
-  .fancybox-close {
-    right: -10rem;
-    top: -5rem;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1269,8 +1310,17 @@ html {
     width: 50%;
   }
   .fancybox-close {
-    right: -1.5rem;
-    top: -2rem;
+    right: -1rem;
+    top: -2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .logo-blue.logo-blue--mobile {
+    display: block;
+    margin-top: 0;
+  }
+  .logo-blue {
+    display: none;
   }
 }
 
@@ -1418,8 +1468,7 @@ html {
     background-position: center center;
   }
   .portfolio__item {
-    width: 8rem;
-    height: 8rem;
+    height: auto;
   }
   .portfolio .slick-arrow {
     top: 50%;
