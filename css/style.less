@@ -1044,12 +1044,19 @@ html {
   visibility: visible;
 }
 
+.fancybox-nav {
+  position: fixed;
+  top: 0;
+  margin-top: -8rem;
+}
+
 .fancybox-prev span {
   position: absolute;
   width: 3.9rem;
   height: 6.3rem;
   background: url(../img/arrow-white.svg) no-repeat;
-  left: -65rem;
+  left: 5rem;
+//  left: -65rem;
 }
 
 .fancybox-next span {
@@ -1058,7 +1065,8 @@ html {
   height: 6.3rem;
   background: url(../img/arrow-white.svg) no-repeat;
   transform: rotate(180deg);
-  right: -65rem;
+  right: 5rem;
+//  right: -65rem;
 }
 
 .fancybox-close {
@@ -1066,57 +1074,58 @@ html {
   background-size: cover;
   width: 3rem;
   height: 3rem;
-  right: -65rem;
-  top: -5rem;
+  position: fixed;
+  top: 10rem;
+  right: 5rem;
 }
 
 @media screen and (max-width: 1700px) {
-  .fancybox-prev span {
-    left: -50rem;
-  }
-  .fancybox-next span {
-    right: -50rem;
-  }
-  .fancybox-close {
-    right: -45rem;
-  }
+//  .fancybox-prev span {
+//    left: -50rem;
+//  }
+//  .fancybox-next span {
+//    right: -50rem;
+//  }
+//  .fancybox-close {
+//    right: -45rem;
+//  }
 }
 
 @media screen and (max-width: 1399px) {
-  .fancybox-prev span {
-    left: -40rem;
-  }
-  .fancybox-next span {
-    right: -40rem;
-  }
-  .fancybox-close {
-    right: -35rem;
-  }
+//  .fancybox-prev span {
+//    left: -40rem;
+//  }
+//  .fancybox-next span {
+//    right: -40rem;
+//  }
+//  .fancybox-close {
+//    right: -35rem;
+//  }
 }
 
 @media screen and (max-width: 1200px) {
-  .fancybox-prev span {
-    left: -30rem;
-  }
-  .fancybox-next span {
-    right: -30rem;
-  }
-  .fancybox-close {
-    right: -30rem;
-  }
+//  .fancybox-prev span {
+//    left: -30rem;
+//  }
+//  .fancybox-next span {
+//    right: -30rem;
+//  }
+//  .fancybox-close {
+//    right: -30rem;
+//  }
 }
 
 @media screen and (max-width: 1023px) {
-  .fancybox-prev span {
-    left: -20rem;
-  }
-  .fancybox-next span {
-    right: -20rem;
-  }
-  .fancybox-close {
-    right: -15rem;
-    top: -5rem;
-  }
+//  .fancybox-prev span {
+//    left: -20rem;
+//  }
+//  .fancybox-next span {
+//    right: -20rem;
+//  }
+//  .fancybox-close {
+//    right: -15rem;
+//    top: -5rem;
+//  }
 }
 
 .fancybox-title iframe {
@@ -1135,6 +1144,12 @@ html {
 
 .logo-blue--mobile {
   display: none;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background: #000;
 }
 
 @media screen and (max-width: 1399px) {
@@ -1456,14 +1471,14 @@ html {
   .fancybox-prev span {
     width: 2rem;
     height: 6rem;
-    left: .5rem;
+    left: 2.5rem;
     background-position: center center;
     background-size: contain;
   }
   .fancybox-next span {
     width: 2rem;
     height: 6rem;
-    right: .5rem;
+    right: 2.5rem;
     background-size: contain;
     background-position: center center;
   }

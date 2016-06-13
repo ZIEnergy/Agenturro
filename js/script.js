@@ -42,6 +42,14 @@ $(document).ready(function() {
         }
     },
   });
+  
+  $('.prev').click(function() {
+    $.fancybox.prev();
+  })
+  
+  $('.next').click(function() {
+    $.fancybox.next();
+  })
 
   $(".form-upload__dragndrop").dropzone({ 
     url: "/file/post",
