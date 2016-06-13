@@ -9,9 +9,14 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/basic.css">
   <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
   <script type="text/javascript" src="js/dropzone.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
@@ -36,7 +41,7 @@
       <div class="phone__icon phone__icon--black"></div>
       <span class="phone__number phone__number--black">030 577-02723</span>
     </a>
-    <a href="#" class="button button--order">jetzt bestellen</a>
+    <a href="#upload" class="button button--order">jetzt bestellen</a>
   </div>
   <div class="front">
     <div class="wrapper">
@@ -101,7 +106,7 @@
       <img src="img/client-7.png" alt="" class="clients__item-picture">
     </li>
   </ul>
-  <div class="upload">
+  <div class="upload" id="upload">
     <div class="upload__container">
       <div class="upload__close">+</div>
       <div class="upload__text">Einfach Wireframes hochladen und schon in <br><span class="text-bold">1 Stunde</span> einen Preisvorschlag bekommen!</div>
@@ -150,11 +155,34 @@
     <h2 class="offer__header">Ihre starke Partner für Design entwicklung</h2>
     <div class="text-common">wir sind weg von klassischen agenturen verlauf mit langen kommunikationswegen, angeboten und so weiter und sofort. Wir machen es schnell und gut :) Sie schicken uns Skitze, wir machen Design. Das was.</div>
     <div class="offer__price">ab <span class="offer__price-content">29€</span> Std.</div>
-    <a href="#" class="button button--solo">in 1 Std. Preis für Dein Projekt bekommen</a>
+    <a href="#upload" class="button button--solo">in 1 Std. Preis für Dein Projekt bekommen</a>
   </div>
   <div class="projects">
     <div class="projects__content">
       <div class="projects__slider">
+        <div class="projects__item">
+          <img src="img/project-1.jpg" alt="" class="projects__item-picture">
+          <div class="projects__item-info">
+            <div class="projects__item-time">17 Std.</div>
+            <div class="projects__item-price">675<span class="projects__item-price-cents">,00€</span></div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <img src="img/project-1.jpg" alt="" class="projects__item-picture">
+          <div class="projects__item-info">
+            <div class="projects__item-time">17 Std.</div>
+            <div class="projects__item-price">675<span class="projects__item-price-cents">,00€</span></div>
+          </div>
+        </div>
+        <div class="projects__item">
+          <div class="projects__item-content">
+            <img src="img/project-1.jpg" alt="" class="projects__item-picture">
+            <div class="projects__item-info">
+              <div class="projects__item-time">17 Std.</div>
+              <div class="projects__item-price">675<span class="projects__item-price-cents">,00€</span></div>
+            </div>
+          </div>
+        </div>
         <div class="projects__item">
           <img src="img/project-1.jpg" alt="" class="projects__item-picture">
           <div class="projects__item-info">
@@ -183,28 +211,28 @@
   </div>
   <div class="portfolio" id="beispiele">
     <div class="portfolio__content">
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-1.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 1">
         <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-2.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 2">
         <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-3.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 3">
         <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-4.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 4">
         <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-1.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 5">
         <img src="img/portfolio-1.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-2.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 6">
         <img src="img/portfolio-2.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-3.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 7">
         <img src="img/portfolio-3.jpg" alt="" class="portfolio__item-picture">
       </a>
-      <a href="#" class="portfolio__item">
+      <a href="img/portfolio-4.jpg" rel="portfolio" class="portfolio__item fancybox" title="Title 8">
         <img src="img/portfolio-4.jpg" alt="" class="portfolio__item-picture">
       </a>
     </div>

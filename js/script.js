@@ -23,6 +23,16 @@ $(document).ready(function() {
       }, 500);
       return false;
   });
+  
+  $(".fancybox").fancybox({
+    helpers:  {
+        title	: { type : 'outside' },
+        thumbs	: {
+          width	: 100,
+          height	: 100
+        }
+    },
+  });
 
   $(".form-upload__dragndrop").dropzone({ 
     url: "/file/post",
