@@ -711,7 +711,6 @@ html {
   padding-bottom: 3.3rem;
 }
 .form-upload__dragndrop {
-  background: #fff;
   width: 62.3rem;
   height: 14.6rem;
   border: 3px dashed #dadada;
@@ -722,6 +721,62 @@ html {
   flex-direction: column;
   margin-top: 5rem;
   position: relative;
+}
+.dropzone {
+  background: transparent;
+}
+.dropzone.dz-started {
+  background: #fff;
+}
+.dropzone.dz-started + .dropzone-container__content {
+  display: none;
+}
+.dz-message {
+  display: none;
+}
+.dz-clickable {
+  z-index: 40;
+}
+.dropzone-container {
+  position: relative;
+  cursor: pointer;
+}
+.dropzone-container__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+}
+.dropzone .dz-preview {
+  min-height: 0;
+  width: auto;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.dropzone .dz-preview .dz-details {
+  height: 100%;
+}
+.dropzone .dz-preview .dz-image {
+  display: none;
+}
+.dropzone .dz-preview .dz-success-mark,
+.dropzone .dz-preview .dz-error-mark {
+  bottom: 0;
+  top: auto;
+}
+.dz-details {
+  width: 100%;
 }
 .form-upload__dragndrop-icon {
   background: url(../img/upload-icon.svg) no-repeat;
@@ -754,6 +809,10 @@ html {
   font-size: 1.8rem;
   font-family: 'HVDFontsBrandonTextBold';
   margin-bottom: 3.9rem;
+}
+.form-upload__link-input:focus {
+  outline: 0;
+  box-shadow: none;
 }
 .upload__button {
   padding: 0;
@@ -1032,9 +1091,13 @@ html {
   .button {
     font-size: 1.4rem;
   }
-  .form-upload__dragndrop {
+  .dropzone-container {
     width: 80%;
     margin: 3rem auto;
+  }
+  .form-upload__dragndrop {
+    width: 100%;
+    height: 100%;
   }
   .form-upload__link-input {
     margin: 0 auto 3rem;
@@ -1170,5 +1233,19 @@ html {
   }
   .projects__item-time:after {
     height: 3rem;
+  }
+  .dropzone-container__content {
+    padding: 0 2rem;
+  }
+  .menu {
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+  .button--order {
+    display: none;
   }
 }

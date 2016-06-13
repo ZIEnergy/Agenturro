@@ -7,12 +7,12 @@
   <title>Agenturro</title>
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/dropzone.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
-  <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
-  <script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
-  <script type="text/javascript" src="js/jquery.fileupload.js"></script>
+  <script type="text/javascript" src="js/dropzone.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -105,16 +105,20 @@
     <div class="upload__container">
       <div class="upload__close">+</div>
       <div class="upload__text">Einfach Wireframes hochladen und schon in <br><span class="text-bold">1 Stunde</span> einen Preisvorschlag bekommen!</div>
-      <form action="" class="form-upload">
-        <div class="form-upload__dragndrop">
-          <div class="form-upload__dragndrop-icon"></div>
-          <div class="form-upload__dragndrop-text">Jetzt Wireframe (Skizze) hochladen</div>
-          <input id="fileupload" type="file" name="files[]" data-url="server/php/" multiple>
+      <div class="form-upload__container">
+        <div class="dropzone-container">
+          <form action="/file-upload" class="form-upload__dragndrop dropzone"></form>
+          <div class="dropzone-container__content">
+            <div class="form-upload__dragndrop-icon"></div>
+            <div class="form-upload__dragndrop-text">Jetzt Wireframe (Skizze) hochladen</div>
+          </div>
         </div>
-        <div class="form-upload__link-text">Oder wenn Du es online hast, füge hier einfach den Link ein</div>
-        <input type="text" placeholder="http://" name="link" class="form-upload__link-input">
-        <button class="button upload__button">in <span class="text-bold">1 Std.</span> Preis bekommen</button>
-      </form>
+        <form action="/file-upload" class="form-upload__link">
+          <div class="form-upload__link-text">Oder wenn Du es online hast, füge hier einfach den Link ein</div>
+          <input type="text" placeholder="http://" name="link" class="form-upload__link-input">
+          <button class="button upload__button">in <span class="text-bold">1 Std.</span> Preis bekommen</button>
+        </form>
+      </div>
       <div class="confidentiality">
         <div class="confidentiality__icon"></div>
         <div class="confidentiality__content">deine Daten werden selbstverständlich vertraulich behandelt</div>
