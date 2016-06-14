@@ -1045,24 +1045,30 @@ html {
   height: 50px;
   background: #000;
 }
-.dz-details {
-  font-family: 'HVDFontsBrandonTextRegular';
-  display: flex;
-  position: static!important;
-}
 .dz-preview {
-  display: flex;
+  display: flex!important;
+  padding-top: .5rem;
 }
 .dropzone .dz-preview .dz-details {
   width: auto;
   min-width: 0!important;
   max-width: none!important;
+  font-family: 'HVDFontsBrandonTextRegular';
+  display: flex;
+  position: static!important;
+  padding-top: 0!important;
+  height: auto!important;
+  line-height: 5.8rem!important;
 }
-.dz-success-mark,
 .dz-error-mark {
   position: static!important;
-  order: 5;
   margin: 0!important;
+}
+.dropzone .dz-preview .dz-details .dz-size span {
+  display: flex;
+}
+.ds-size {
+  font-size: 1.2rem!important;
 }
 @media screen and (max-width: 1399px) {
   .wrapper {
