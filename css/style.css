@@ -1325,8 +1325,9 @@ html {
     width: 70%;
   }
   .projects {
-    margin: 0 0 3rem;
+    margin-bottom: 0;
     padding-top: 0;
+    padding-bottom: 7rem;
   }
   .projects .slick-prev {
     left: -4.5rem;
@@ -1376,7 +1377,7 @@ html {
   }
   .portfolio__content:before,
   .portfolio__content:after {
-    display: none;
+    width: 8rem;
   }
   .portfolio__item-picture {
     width: 100%;
