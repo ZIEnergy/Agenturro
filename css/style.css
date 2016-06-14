@@ -1023,7 +1023,7 @@ html {
   width: 3rem;
   height: 3rem;
   position: fixed;
-  top: 10rem;
+  top: 5rem;
   right: 5rem;
 }
 .fancybox-title iframe {
@@ -1044,6 +1044,25 @@ html {
   width: 50px;
   height: 50px;
   background: #000;
+}
+.dz-details {
+  font-family: 'HVDFontsBrandonTextRegular';
+  display: flex;
+  position: static!important;
+}
+.dz-preview {
+  display: flex;
+}
+.dropzone .dz-preview .dz-details {
+  width: auto;
+  min-width: 0!important;
+  max-width: none!important;
+}
+.dz-success-mark,
+.dz-error-mark {
+  position: static!important;
+  order: 5;
+  margin: 0!important;
 }
 @media screen and (max-width: 1399px) {
   .wrapper {
@@ -1380,5 +1399,9 @@ html {
     height: 3.15rem;
     margin-top: -1.4rem;
     background-size: contain;
+  }
+  .fancybox-close {
+    top: 1rem;
+    right: 1rem;
   }
 }
